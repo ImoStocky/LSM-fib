@@ -1,4 +1,3 @@
-
 def fib(n):
     if n==0:
         return 0
@@ -9,5 +8,8 @@ def fib(n):
 
 if __name__=="__main__":
 
-    val = fib(10)
-    print(val)
+    mx = 10;
+
+    with open("out.txt","w") as f:
+        for x in range(0,mx+1):
+            f.write(str(fib(x))+" ")
